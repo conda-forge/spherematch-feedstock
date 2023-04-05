@@ -1,5 +1,5 @@
 {% set name = "spherematch" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/esheldon/smatch/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 19f9de171074df93c1b00aac5828076571e3eff3e5d02516776b3086c21ed333
+  sha256: 5b07e6992e74059466716c2a1ca3e4c3f44e9ac69fea8804ae269f28dce2209e
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
