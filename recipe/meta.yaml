@@ -10,7 +10,7 @@ source:
   sha256: 3ce8e571cc9231de216852967d6c24fa2debe81a8adb3c20273dea69e8893238
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -29,7 +29,6 @@ requirements:
   run:
     - python
     - scipy
-    - {{ pin_compatible("numpy") }}
 
 test:
   imports:
